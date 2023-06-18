@@ -12,7 +12,7 @@ We decided to make a website which allows people who have apartments or a spacio
 * [Testing](#testing)
 * [Integration](#integration)
 * [Deployment](#deployment)
-* [Maintenance](#maintenance/updates)
+* [Maintenance](#maintenance)
 
 ## Environment
 
