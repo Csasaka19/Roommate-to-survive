@@ -82,4 +82,6 @@ Authors:
 
 Clive Sasaka - [Github](https://github.com/Csasaka19) / [Twitter](https://twitter.com/Sasaka_JR)
 
+Helen Zeleke - [Github](https://github.com/93Helu) 
+
 &copy; 2023 Roommate To Survive - All Rights Reserved
