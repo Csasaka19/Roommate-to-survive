@@ -9,3 +9,4 @@ class location():
     location_address = ""
     city = ""
     country = ""
+    location_description = ""

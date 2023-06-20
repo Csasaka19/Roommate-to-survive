@@ -11,5 +11,4 @@ class room_listing():
     room_availability = ""
     room_address = ""
     room_status = ""
-    roommate_preference = ""
     
