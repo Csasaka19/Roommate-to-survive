@@ -13,4 +13,4 @@ class user_profile():
     location = ""
     country = ""
     gender = ""
-    age = ""
+    age = 0
