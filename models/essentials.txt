@@ -1,0 +1,73 @@
+booking.py.............>
+room ids and user ids
+booking id
+check in date
+booking status
+check out date
+
+
+dwelling_type.py.............>
+dwelling_type id
+dwelling_type name
+location id
+
+
+
+
+
+location.py.................>
+location id
+location name
+location description
+location address
+city
+country
+
+
+
+review.py....................>
+user id
+room id
+review id
+review text
+rating
+
+
+
+
+roommate_listing.py.............>
+user id
+roommate_id 
+roommate_description
+roommate_price
+roommate_availability
+roommate_address
+roommate_status
+roommate_preference 
+
+
+
+
+room_listing.py...............>
+user id
+room id
+room type
+room description
+room price
+room status
+room amenities
+room rules
+
+
+
+user_profile.py...............>
+user id
+user name
+user email
+user phone
+user password
+budget
+age
+country
+
+
