@@ -2,9 +2,10 @@
 """This is the user profile module"""
 import hashlib
 import getpass
+from models.location import location
 
 
-class user_profile():
+class user_profile(location):
     """This is the user profile class"""
 
     def __init__(self, user_id, user_type, name, email, phone, budget, location, country, gender, age):
@@ -15,10 +16,15 @@ class user_profile():
         self.email = email
         self.phone = phone
         self.budget = budget
-        self.location = location
+        self.location = super().get_location()
         self.country = country
         self.gender = gender
         self.age = age
+        
+        
+    def get_user_id(self):
+        """This is the getter method that gets the user id and returns it"""
+        return self.user_id
 
     def create_password(self):
         """This method creates a password for the user and returns the hashed password"""
