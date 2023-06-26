@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """This is the roommate listing module"""
-from models.user_profile import user_profile as user
+from models.user_profile import user_profile 
 
 
-def roommate_listing(user):
+def roommate_listing(user_profile):
     """This is the roommate listing class"""
 
-    def __init__(self, roommate_id, roommate_description, roommate_price, roommate_availability,
+    def __init__(self, user_id, roommate_id, roommate_description, roommate_price, roommate_availability,
                  roommate_address, roommate_status, roommate_preference):
         """This is the constructor method that initializes the roommate listing class"""
-        self.user_id = user.get_user_id()
+        user_profile().__init__(user_id)
         self.roommate_id = roommate_id
         self.roommate_description = roommate_description
         self.roommate_price = roommate_price
@@ -18,10 +18,10 @@ def roommate_listing(user):
         self.roommate_status = roommate_status
         self.roommate_preference = roommate_preference
 
-    def set_roommate_listing(self, roommate_id, roommate_description, roommate_price, roommate_availability,
+    def set_roommate_listing(self, user_id, roommate_id, roommate_description, roommate_price, roommate_availability,
                              roommate_address, roommate_status, roommate_preference):
         """This is the setter method that sets the roommate listing attributes"""
-        self.user_id = user.get_user_id()
+        self.user_id = user_id
         self.roommate_id = roommate_id
         self.roommate_description = roommate_description
         self.roommate_price = roommate_price
