@@ -6,7 +6,7 @@ class room_listing(user):
     """This is the available room_listing class"""
     
 
-    def __init__(self, user_id, room_id, room_description, room_price, room_availability, room_address, room_status):
+    def __init__(self, room_id, room_description, room_price, room_availability, room_address, room_status):
         """This is init method that initializes the available room_listing class"""
         self.user_id = super().get_user_id()
         self.room_id = room_id
@@ -16,7 +16,7 @@ class room_listing(user):
         self.room_address = room_address
         self.room_status = room_status
 
-    def set_room_listing(self, user_id, room_id, room_description, room_price, room_availability, room_address, room_status):
+    def set_room_listing(self,room_id, room_description, room_price, room_availability, room_address, room_status):
         """This is the setter method that sets the available room_listing attributes"""
         self.user_id = super().get_user_id()
         self.room_id = room_id

@@ -8,7 +8,7 @@ from models.location import location
 class user_profile(location):
     """This is the user profile class"""
 
-    def __init__(self, user_id, user_type, name, email, phone, budget, location, country, gender, age):
+    def __init__(self, user_id, user_type, name, email, phone, budget, country, gender, age):
         """This is the constructor method that initiates the user profile object"""
         self.user_id = user_id
         self.user_type = user_type
