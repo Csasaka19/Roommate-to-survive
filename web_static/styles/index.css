@@ -1,1 +1,106 @@
+.Location {
+    width: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.Location > h3 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    flex: 0 1 100%;
+}
+.Location > li {
+    width: 390px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    border: 1px solid #542ba0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.Country, .City, .Area {
+    width: 100px;
+    text-align: center;
+}
+.Ethiopia, .Kenya {
+    width: 100px;
+    text-align: center;
+}
+.Addis Ababa, .Nairobi {
+    width: 100px;
+    text-align: center;
+}
+
+.Dwelling Type {
+    color: #542ba0;
+    border: 4px solid #542ba0;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.Dwelling Type > h3 {
+    margin: 0 0 0 0;
+}
+
+.Room, .House, .Condo, .Apartment {
+    width: 100px;
+    text-align: center;
+}
+
+.Room {
+    align-self: center;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Room_size, .Number_of_room, .Room_for, .Room_amenities {
+   width: 100px;
+    text-align: center;
+}
+
+.add_image {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    background: url("../images/icon_bed.png") no-repeat center;
+}
+
+.contact_image {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    background: url("../images/icon_bath.png") no-repeat center;
+}
+
+.user > p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.description > p {
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
