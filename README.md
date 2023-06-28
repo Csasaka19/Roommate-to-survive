@@ -76,7 +76,7 @@ The website will be maintained by the developers.
 
 ## Bugs
 
-No known bugs at the moment.
+The unit tests are now working as expected. The integration tests are not working as expected.
 
 Authors:
 
