@@ -1,54 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <title>Roommate</title>
-    <link href="styles/common.css" rel="stylesheet" type="text/css">
-    <link href="../images/icon.png" rel="shortcut icon">
-</head>
-<body>
-<header></header>
-<div class="container">
-    <section class="filters">
-        <button>
-            <h2>Filter</h2>
-        </button>
-        <div class="locations">
-            <h2>Location</h2>
-            <ul class="popover">
-                <li>
-                    <h3>country:</h3>
-                </li>
-                <li>
-                    <ul>
-                        <li>Ethiopia</li>
-                        <li>Kenya</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>City:</h3>
-                </li>
-                <li>
-                    <ul>
-                        <li>Addis Ababa</li>
-                        <li>Nairobi</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="dwelling-type">
-            <h2>Dwelling Type</h2>
-            <ul class="popover">
-                <li>Room</li>
-                <li>House</li>
-                <li>Condo</li>
-                <li>Apartment</li>
-            </ul>
-        </div>
+    <link rel="stylesheet" href="styles/roommate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+    <header class="primary-header container group">
+
+      <h1 class="logo">
+        <a href="index.html">Roommate To Survive</a>
+      </h1>
+
+      <h3 class="tagline">Ethiopia , Kenya</h3>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li><!--
+          --><li><a href="location.html">Location</a></li><!--
+          --><li><a href="filters.html">Filters</a></li><!--
+            --><li><a href="register.html">Log in</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero container">
+
+      <h2>Dedicated to the Craft of Bringing compatible roommates together</h2>
+
+      <p>Every year people flock in to this website for proper rooms!</p>
+
+      <a class="btn btn-alt" href="register.html">Create an account</a>
+
     </section>
-</div>
-<footer>
-    <p>Roommate To Survive</p>
-</footer>
-</body>
+
+    <!-- Teasers -->
+    <section class="row">
+
+        <div class="grid">
+
+         <!-- Locations -->
+
+            <section class="teaser col-1-3">
+                <a href="location.html">
+                <h5>Location</h5>
+                <h3>Suitable Location</h3>
+                </a>
+                <p>Choose the most suitable locality including countries and cities according to your preferences</p>
+            </section><!--
+
+             Filters
+
+         --><section class="teaser col-1-3">
+                <a href="filters.html">
+                <h5>Filters</h5>
+                <h3>Filter by preferences</h3>
+                </a>
+                <p>Browse and take advantage of the Roommate To Survive matching capability which can show you every roommate ,country and rooms according to your preference </p>
+            </section><!--
+
+            Review
+
+            --><section class="teaser col-1-3">
+                <a href="review.html">
+                <h5>Review</h5>
+                <h3>Give Feedback</h3>
+                 </a>
+                <p>Give appropriate feedback and review out of a certain scale about rooms, dwelling and users in general.</p>
+            </section>><!--
+
+                Dwellings
+    
+                --><section class="teaser col-1-3">
+                    <a href="dwellingtype.html">
+                    <h5>Dwelling Type</h5>
+                    <h3>Houses</h3>
+                     </a>
+                    <p>Choose houses and dwelling in our catalogue.</p>
+                </section>
+
+        </div>
+
+    </section>  
+
+    <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+      <small>&copy; Roommate to Survive</small>
+
+      <nav class="nav primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li><!--
+            --><li><a href="location.html">Location</a></li><!--
+            --><li><a href="filters.html">Filters</a></li><!--
+              --><li><a href="register.html">Log in</a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+  </body>
 </html>
