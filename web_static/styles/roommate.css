@@ -1,14 +1,20 @@
 /* common.css */
-body {
+html, body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 14px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    color:  #FFFFFF ;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin: 30px auto;
+    width: 100%;
+    flex: 10 auto;
 }
 
 /* header.css */

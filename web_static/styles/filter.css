@@ -21,6 +21,7 @@
     right: 30px;
     box-sizing: border-box;
 }
-.filters button:hover     
-    background-color:#B85042;
+.filters button:hover  
+{
+    background-color: #B85042;
 }
