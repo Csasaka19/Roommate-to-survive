@@ -60,7 +60,3 @@ class user_profile(location):
             print("Account created successfully!")
         else:
             print("Failed to create an account.")
-
-# Usage example
-# user = UserProfile("", "", "", "", "", "", "", "", "", 0)
-# user.create_account()
