@@ -180,7 +180,7 @@ h1, h3, h4, h5, p {
   }
 
 .row {
-	background: #fff;
+	background: #ffffff;
 	padding: 66px 0 44px 0;
   }
 
@@ -256,13 +256,14 @@ body {
   }
   h3 {
 	font-size: 21px;
+    color: #000000
   }
   h4 {
 	font-size: 18px;
   }
 
   h5 {
-	color: #a9b2b9;
+	color: #000000;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -286,6 +287,11 @@ a {
 p a {
 	border-bottom: 1px solid #dfe2e5;
   }
+  p
+  {
+ color: #000000;
+  }
+
   a:hover {
 	color: #eb0000;
   }
