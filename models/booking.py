@@ -5,10 +5,9 @@ from models.user_profile import user_profile as user
 
 class booking(user):
     """This is the booking class"""
-    def __init__(self, booking_id, user_id, booking_date):
+    def __init__(self, booking_id, booking_date):
         """This is the constructor method that initializes the booking class"""
         self.booking_id = booking_id
-        super().__init__(user_id)
         self.booking_date = booking_date
         self.booking_status = "Pending"
 

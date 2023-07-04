@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """This is the review and rating module"""
-from models.user_profile import user_profile as user
+from models.location import location 
 
 
-class review(user):
+class review(location):
     """This is the review and rating class"""
 
-    def __init__(self, user_id, room_id, rating, review_id, review_text, review_date):
+    def __init__(self, room_id, rating, review_id, review_text, review_date):
         """This is init method that initializes the review and rating class"""
-        super().__init__(user_id)
         self.room_id = room_id
         self.rating = rating
         self.review_id = review_id

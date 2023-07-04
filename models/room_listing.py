@@ -6,9 +6,8 @@ class room_listing():
     """This is the available room_listing class"""
     
 
-    def __init__(self, user_id, room_id, room_description, room_price, room_availability, room_address, room_status):
+    def __init__(self, room_id, room_description, room_price, room_availability, room_address, room_status):
         """This is init method that initializes the available room_listing class"""
-        super().__init__(user_id)
         self.room_id = room_id
         self.room_description = room_description
         self.room_price = room_price

@@ -2,7 +2,7 @@
 """This is the user profile module"""
 import hashlib
 import getpass
-from models.location import location
+from location import location
 
 
 class user_profile(location):
@@ -10,7 +10,6 @@ class user_profile(location):
 
     def __init__(self, user_id, user_type, name, email, phone, budget, country, gender, age):
         """This is the constructor method that initiates the user profile object"""
-        super().__init__()
         self.user_id = user_id
         self.user_type = user_type
         self.name = name
