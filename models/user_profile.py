@@ -2,24 +2,25 @@
 """This is the user profile module"""
 import hashlib
 import getpass
-from models.location import location
+from location import location
 
 
 class user_profile(location):
     """This is the user profile class"""
 
-    def __init__(self, user_id, user_type, name, email, phone, budget, country, gender, age):
+    def __init__(self,location_id, location_name, location_address, city, country,
+                 location_description, user_id, user_type, name, email, phone, budget,
+                 gender, age):
         """This is the constructor method that initiates the user profile object"""
-        super().__init__()
         self.user_id = user_id
         self.user_type = user_type
         self.name = name
         self.email = email
         self.phone = phone
         self.budget = budget
-        self.country = country
         self.gender = gender
         self.age = age
+        super().__init__(location_id, location_name, location_address, city, country, location_description)
         
         
     def get_user_id(self):
@@ -60,7 +61,3 @@ class user_profile(location):
             print("Account created successfully!")
         else:
             print("Failed to create an account.")
-
-# Usage example
-# user = UserProfile("", "", "", "", "", "", "", "", "", 0)
-# user.create_account()

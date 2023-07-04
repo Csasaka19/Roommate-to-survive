@@ -3,14 +3,18 @@
 from models.user_profile import user_profile as user
 
 
-class dwelling_type():
+class dwelling_type(user):
     """This is the dwelling type class"""
-    def __init__(self, user_id, dwelling_type_id, dwelling_type_name, location):
+    def __init__(self, location_id, location_name, location_address, city, country,
+                 location_description, user_id, user_type, name, email, phone, budget,
+                 gender, age, dwelling_type_id, dwelling_type_name, location):
         """This is the constructor method that initializes the dwelling type class"""
-        super().__init__(user_id)
         self.dwelling_type_id = dwelling_type_id
         self.dwelling_type_name = dwelling_type_name
         self.location = location
+        super().__init__(location_id, location_name, location_address, city, country,
+                 location_description, user_id, user_type, name, email, phone, budget,
+                 gender, age)
 
     def set_dwelling_type(self, user_id, dwelling_type_id, dwelling_type_name, location):
         """This is the setter method that sets the dwelling type attributes"""
