@@ -19,7 +19,7 @@ def main():
     new_dwelling_type_id = 2
     new_dwelling_type_name = "House"
     new_location = "Suburb"
-    my_dwelling_type.set_dwelling_type(new_user_id, new_dwelling_type_id, new_dwelling_type_name)
+    my_dwelling_type.set_dwelling_type(new_user_id, new_dwelling_type_id, new_dwelling_type_name, new_location)
 
     # Get and print updated dwelling type attributes
     print("Updated User ID:", my_dwelling_type.get_user_id())
