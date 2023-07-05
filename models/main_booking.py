@@ -1,30 +1,27 @@
-#!/usr/bin/python3
-"""This module is the main booking module which tests the booking class"""
-from models.booking import booking
-from models.user_profile import user_id as user_id
+from booking import booking
 
 def main():
-    # Create a booking instance
-    booking_id = 1
-    user_id = 123
-    booking_date = "2023-07-03"
-    my_booking = booking(booking_id, user_id, booking_date)
+    # Create a booking object
+    booking_obj = booking(location_id=123, location_name="Hotel ABC", location_address="123 Main Street",
+                          city="City XYZ", country="Country XYZ", location_description="Beautiful hotel",
+                          user_id=456, user_type="Guest", name="John Doe", email="john.doe@example.com",
+                          phone="123-456-7890", budget=1000, gender="Male", age=30,
+                          booking_id=789, booking_date="2023-07-10")
 
-    # Print initial booking status
-    print("Initial Booking Status:", my_booking.booking_status)
+    # Print the initial booking status
+    print("Initial Booking Status:", booking_obj.booking_status)
 
     # Confirm the booking
-    my_booking.confirm_booking()
-    print("Updated Booking Status:", my_booking.booking_status)
+    booking_obj.confirm_booking()
+    print("Booking Status after confirmation:", booking_obj.booking_status)
 
     # Update the booking date
-    new_date = "2023-07-04"
-    my_booking.update_booking_date(new_date)
-    print("Updated Booking Date:", my_booking.booking_date)
+    booking_obj.update_booking_date("2023-07-15")
+    print("Updated Booking Date:", booking_obj.booking_date)
 
     # Cancel the booking
-    my_booking.cancel_booking()
-    print("Updated Booking Status:", my_booking.booking_status)
+    booking_obj.cancel_booking()
+    print("Booking Status after cancellation:", booking_obj.booking_status)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
