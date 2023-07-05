@@ -4,11 +4,9 @@ from models.dwelling_type import dwelling_type
 
 def main():
     # Create a dwelling type instance
-    user_id = 123
-    dwelling_type_id = 1
-    dwelling_type_name = "Apartment"
-    location = "City Center"
-    my_dwelling_type = dwelling_type(user_id, dwelling_type_id, dwelling_type_name, location)
+    my_dwelling_type = dwelling_type("location_id", "location_name", "location_address", "Machakos", "Kenya",
+                 "Best Apartment", 123, "Guest", "Somebarry", "something@gmail.com","123-789-90-45", 2000,
+                 "Male", 25, 3456, "Apartment")
 
     # Get and print dwelling type attributes
     print("User ID:", my_dwelling_type.get_user_id())
@@ -21,7 +19,7 @@ def main():
     new_dwelling_type_id = 2
     new_dwelling_type_name = "House"
     new_location = "Suburb"
-    my_dwelling_type.set_dwelling_type(new_user_id, new_dwelling_type_id, new_dwelling_type_name, new_location)
+    my_dwelling_type.set_dwelling_type(new_user_id, new_dwelling_type_id, new_dwelling_type_name)
 
     # Get and print updated dwelling type attributes
     print("Updated User ID:", my_dwelling_type.get_user_id())
