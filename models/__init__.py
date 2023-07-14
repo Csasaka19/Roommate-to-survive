@@ -11,6 +11,6 @@ from models.roommate_listing import roommate_listing
 from models.user_profile import user_profile
 
 
-database = Database_Storage()
-database.reload()
+# database = Database_Storage()
+# database.reload()
 
