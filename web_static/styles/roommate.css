@@ -161,7 +161,7 @@ h1, h3, h4, h5, p {
 .logo{
 	border-top: 4px solid #648880;
   border-bottom: 4px solid #648880;
-  float: left;
+  float:inline-start
   font-size: 48px;
   font-weight: 100;
   letter-spacing: .5px;
@@ -180,12 +180,12 @@ h1, h3, h4, h5, p {
   }
 
 .row {
-	background: #ffffff;
+	background: #D7C49EFF;
 	padding: 66px 0 44px 0;
   }
 
   .row-alt {
-	background: #cbe2c1;
+	background: #D7C49EFF;
 	background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
 	background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
 	background: linear-gradient(to right, #a1d3b0, #f6f1d3);
@@ -237,8 +237,8 @@ h1, h3, h4, h5, p {
   ========================================
 */
 body {
-	background: #293f50;
-	color: #888;
+	background: #343148FF;
+	color: #D7C49EFF;
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
@@ -263,7 +263,7 @@ body {
   }
 
   h5 {
-	color: #000000;
+	color: #648880  ;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
