@@ -8,7 +8,7 @@ from location import location
 class user_profile(location):
     """This is the user profile class"""
 
-    def __init__(self,location_id, location_name, location_address, city, country,
+    def __init__(self, location_id, location_name, location_address, city, country,
                  location_description, user_id, user_type, name, email, phone, budget,
                  gender, age):
         """This is the constructor method that initiates the user profile object"""
@@ -21,8 +21,7 @@ class user_profile(location):
         self.gender = gender
         self.age = age
         super().__init__(location_id, location_name, location_address, city, country, location_description)
-        
-        
+
     def get_user_id(self):
         """This is the getter method that gets the user id and returns it"""
         return self.user_id

@@ -5,6 +5,7 @@ from models.user_profile import user_profile as user
 
 class booking(user):
     """This is the booking class"""
+
     def __init__(self, location_id, location_name, location_address, city, country,
                  location_description, user_id, user_type, name, email, phone, budget,
                  gender, age, booking_id, booking_date):
@@ -12,9 +13,9 @@ class booking(user):
         self.booking_id = booking_id
         self.booking_date = booking_date
         self.booking_status = "Pending"
-        user. __init__(self,location_id, location_name, location_address, city, country,
-                 location_description, user_id, user_type, name, email, phone, budget,
-                 gender, age)
+        user.__init__(self, location_id, location_name, location_address, city, country,
+                      location_description, user_id, user_type, name, email, phone, budget,
+                      gender, age)
 
     def confirm_booking(self):
         """Confirm the booking"""

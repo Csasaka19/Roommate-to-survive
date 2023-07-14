@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This is the roommate listing module"""
-from models.user_profile import user_profile 
+from models.user_profile import user_profile
 
 
 def roommate_listing(user_profile):
