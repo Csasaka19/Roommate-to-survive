@@ -64,7 +64,7 @@ table {
 .container,
 .grid{
 	margin: 0 auto;
-	width: 460px;
+	width: 960px;
 }
 .container{
 	padding-left: 30px;
@@ -176,7 +176,7 @@ h1, h3, h4, h5, p {
 */
 .row,
   .row-alt {
-	min-width: 460px;
+	min-width: 960px;
   }
 
 .row {
