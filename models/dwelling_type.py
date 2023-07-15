@@ -5,6 +5,7 @@ from models.user_profile import user_profile as user
 
 class dwelling_type(user):
     """This is the dwelling type class"""
+
     def __init__(self, location_id, location_name, location_address, city, country,
                  location_description, user_id, user_type, name, email, phone, budget,
                  gender, age, dwelling_type_id, dwelling_type_name):
@@ -12,14 +13,17 @@ class dwelling_type(user):
         self.dwelling_type_id = dwelling_type_id
         self.dwelling_type_name = dwelling_type_name
         super().__init__(location_id, location_name, location_address, city, country,
-                 location_description, user_id, user_type, name, email, phone, budget,
-                 gender, age)
+                         location_description, user_id, user_type, name, email, phone, budget,
+                         gender, age)
 
     def set_dwelling_type(self, user_id, dwelling_type_id, dwelling_type_name):
         """This is the setter method that sets the dwelling type attributes"""
         self.user_id = user_id
         self.dwelling_type_id = dwelling_type_id
         self.dwelling_type_name = dwelling_type_name
+
+    def set_location(self, location):
+        self.location_name = location
 
     def get_dwelling_type_id(self):
         '''This is the getter method that gets the dwelling type id and returns it'''
@@ -31,5 +35,4 @@ class dwelling_type(user):
 
     def get_location(self):
         """This is the getter method that gets the location and returns it"""
-        return self.location
-    
+        return self.location_name
