@@ -161,7 +161,7 @@ h1, h3, h4, h5, p {
 .logo{
 	border-top: 4px solid #648880;
   border-bottom: 4px solid #648880;
-  float:initial;
+  float:left;
   font-size: 48px;
   font-weight: 100;
   letter-spacing: .5px;
