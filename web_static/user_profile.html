@@ -1,66 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Roommate</title>
-    <link href="styles/common.css" rel="stylesheet" type="text/css">
-    <link href="styles/header.css" rel="stylesheet" type="text/css">
-    <link href="styles/footer.css" rel="stylesheet" type="text/css">
-    <link href="../images/icon.png" rel="shortcut icon">
-</head>
+<html>
 <body>
-<header></header>
-<div class="container">
-    <section class="user_profile">
-        <h1>create account</h1>
-            <div class="user_id">
-                Enter user ID:
-            </div>
-            <div class="name">
-                    Enter user name:
-              <div class="phone">
-                    Enter user phone:
-                </div>
-            <div class="budget">
-                    Enter user budget:
-                </div>
-            <div class="email">
-                    Enter user email:
-                </div>
-              <div class="location">
-                Enter user location:
-                </div>
-            <div class="country">
-                    Enter user country:
-                </div>
-            <div class="gender">
-                 Enter user gender:
-              <div class="age">
-                    Enter user age:
-            </div>
-        </article>
-        <article>
-            <h2>create password</h2>
-            <div class="password">
-                Enter password:
-            </div>
-            <div class="confirm_password">
-               Confirm password:
-              </div>
-            <div class="hashed_password">
-              Passwords do not match. Please try again.
-               </div>
-            <div class="hashed_password">
-              Account created successfully!
-              </div>
-            <div class="hashed_password">
-            Failed to create an account.
-                </div>
-        </article>
-    </section>
-</div>
-<footer>
-    <p>Roommate To Survive</p>
-</footer>
+
+<meta charset="utf-8">
+    <title>Roommate</title>
+    <link rel="stylesheet" href="styles/user profile.css">
+    
+    <form action="/action_page.php">
+  <fieldset>
+    <legend>Create Account:</legend>
+    <label for="fname">User Id:</label>
+    <input type="text" id="ID" name="ID" value="Enter user ID"><br><br>
+    <label for="lname">Name:</label>
+    <input type="text" id="name" name="name" value="Enter user name"><br><br>
+    <label for="phone">Phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="+123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+    <label for="lname">Budget:</label>
+    <input type="text" id="budget" name="budget" value="Enter your budget"><br><br>
+    <label for="lname">Email:</label>
+    <input type="email" id="email" name="email" value="example@gmail.com"><br><br>
+    <label for="lname">Age:</label>
+    <input type="text" id="number" name="number" value="Enter user age"><br><br>
+    <article>Country:</article>
+    <input type="radio" id="Ethiopia" name="location" value="Ethiopia">
+    <label for="country">Ethiopia, Addis Ababa</label>
+    <input type="radio" id="Kenya" name="location" value="Kenya">
+    <label for="country">Kenya, Nairobi</label><br>
+    <article>Gender:</article>
+    <input type="radio" id="Female" name="gender" value="Female">
+    <label for="gender">Female</label>
+    <input type="radio" id="Male" name="location" value="Male">
+    <label for="male">Male</label><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
 </body>
 </html>
