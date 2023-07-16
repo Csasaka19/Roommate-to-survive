@@ -3,39 +3,73 @@
 <head>
     <meta charset="utf-8">
     <title>Roommate</title>
-    <link href="styles/common.css" rel="stylesheet" type="text/css">
-    <link href="styles/header.css" rel="stylesheet" type="text/css">
-    <link href="styles/footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/review.css">
     <link href="../images/icon.png" rel="shortcut icon">
 </head>
-<body>
-<header></header>
-<div class="container">
-    <section class="Review">
-        <h1>Review</h1>
-            <div class="user_id">
-               User ID: 123
-            </div>
-            <div class="room_id">
-                    Room ID: 1
-              </div>
-              <div class="rating">
-                   Rating: 4.5
-                </div>
-                 <div class="review_id">
-                   Review ID: 1
-                   </div>
-                   <div class="review_text">
-                   Review text: Great experience! Highly recommended.
-                     </div>
-                     <div class="review_date">
-                  Review Date: 2023-07-03
-                </div> 
-        </article>
-    </section>
+<form>
+<header>
+    <h2 id="fh2">WE APPRECIATE YOUR REVIEW!</h2>
+<h6 id="fh6">Your review will help us to improve our web hosting services.</h6>/header>
+<form id="feedback" action="">
+  <div class="pinfo">Your personal info</div>
+  
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <label for="name">Review ID:</label><br>
+  <input  name="name" placeholder="name" class="form-control"  type="text">
+    </div>
+  </div>
 </div>
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <label for="ID">Room ID:</label><br>
+    <input name="room_id" type="number" class="form-control" placeholder="room id">
+     </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <label for="calander">Review Date:</label><br>
+  <input  name="review_date" placeholder="DD/MM/YYYY" class="form-control"  type="calander">
+    </div>
+  </div>
+</div>
+
+ <div class="pinfo">Rate our overall services.</div>
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <label for="number">Review rating:</label><br>
+   <select class="form-control" id="rate">
+      <option value="1star">1</option>
+      <option value="2stars">2</option>
+      <option value="3stars">3</option>
+      <option value="4stars">4</option>
+      <option value="5stars">5</option>
+    </select>
+    </div>
+  </div>
+</div>
+
+ <div class="pinfo">Write your feedback.</div>
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+ <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+  <textarea class="form-control" id="review" rows="3"></textarea>
+    </div>
+  </div>
+</div>
+
+ <button type="submit" class="btn btn-primary">Submit</button>
 <footer>
     <p>Roommate To Survive</p>
 </footer>
-</body>
-</html>
+</form>
+    </html>
