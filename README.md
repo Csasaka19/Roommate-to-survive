@@ -80,7 +80,7 @@ The website will be maintained by the developers.
 No bugs at the moment.
 
 ## Landing
-The landong page link of this project can be found in https://csasaka19.github.io/
+The landing page link of this project can be found in https://csasaka19.github.io/
 
 
 Authors:
