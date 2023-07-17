@@ -76,7 +76,7 @@ The website will be maintained by the developers.
 
 ## Bugs
 
-The roommate_listing and user_profile  unit test should be fixed.
+No bugs at the moment.
 
 Authors:
 
