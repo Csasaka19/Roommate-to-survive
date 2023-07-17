@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Roommate</title>
-    <link href="styles/common.css" rel="stylesheet" type="text/css">
-    <link href="styles/header.css" rel="stylesheet" type="text/css">
-    <link href="styles/footer.css" rel="stylesheet" type="text/css">
-    <link href="../images/icon.png" rel="shortcut icon">
-</head>
+<html>
 <body>
-<header></header>
-<div class="container">
-    <section class="roommate_listing">
-        <h1>Roommate Profile</h1>
-            <div class="roommate_id">
-               1
-            </div>
-            <div class="roommate_description">
-                    xxxxxxxxxxxxx
-              <div class="roommate_price">
-                   $250
-                </div>
-            <div class="roommate_availability">
-                    from 25/07/2023
-                </div>
-            <div class="roommate_address">
-                    Nairobi, Kenya
-                </div>
-              <div class="roommate_status">
-                xxxxx 
-                </div>
-            <div class="roommate_preference">
-                    <b>Gender:</b>  <b>Occupation:</b>  <b>Age:</b> 
-                </div>
-        </article>
-    </section>
-</div>
-<footer>
-    <p>Roommate To Survive</p>
-</footer>
+
+<meta charset="utf-8">
+    <title>Roommate</title>
+    <link rel="stylesheet" href="styles/roommate listing.css">
+    
+    <form action="/action_page.php">
+  <fieldset>
+    <legend>Roommate Profile:</legend>
+    <label for="fname">Roommate ID:</label>
+    <input type="text" id="ID" name="ID"><br><br>
+    <label for="number">Roommate Budget:</label>
+    <input type="number" id="budget" name="budget"><br><br>
+    <label for="datemin">Roommate Availability:</label>
+    <input type="date" id="datemin" name="datemin"<br><br><br>
+    <label for="text">Roommate Address:</label>
+    <input type="radio" id="Ethiopia" name="location" value="Ethiopia">
+    <label for="country">Ethiopia, Addis Ababa</label>
+    <input type="radio" id="Kenya" name="location" value="Kenya">
+    <label for="country">Kenya, Nairobi</label><br><br>
+    <article>Roommate Preference</article><br>
+     <label for="text">Occupation:</label>
+  <select id="occupation" name="occupation">
+    <option value="Professional">professional</option>
+    <option value="Student">Student</option>
+    <option value="I don't mind">I don't mind</option><br>
+</select>
+   <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+    <option value="I don't mind">I don't mind</option><br>
+  </select>
+ <label for="age">Age:</label>
+  <select id="age" name="age">
+    <option value="20-35">20-35</option>
+    <option value="25-40">25-40</option>
+    <option value="I don't mind">I don't mind</option><br>
+  </select>
+<br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
 </body>
 </html>
