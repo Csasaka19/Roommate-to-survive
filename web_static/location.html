@@ -1,64 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Roommate</title>
-    <link href="styles/common.css" rel="stylesheet" type="text/css">
-    <link href="styles/header.css" rel="stylesheet" type="text/css">
-    <link href="styles/footer.css" rel="stylesheet" type="text/css">
-    <link href="../images/icon.png" rel="shortcut icon">
-</head>
+<html>
 <body>
-<header></header>
-<div class="container">
-    <section class="location">
-        <h1>Location</h1>
-        <article>
-            <h2>Seeking House/Apartment for Family</h2>
-            <div class="location_id">
-                1
-            </div>
-            <div class="location_name">
-                Hotel XYZ
-                </div>
-            <div class="location_address">
-                    123 Main Street
-                </div>
-            <div class="city">
-                    Cityville
-                </div>
-            <div class="country">
-                    Countryland
-                </div>
-            <div class="location_description">
-                <p>A beautiful hotel in the heart of the city</p>
-            </div>
-        </article>
-        <article>
-            <h2>Looking for a room!</h2>
-            <div class="location_id">
-                2
-            </div>
-            <div class="location_name">
-               Resort ABC
-                </div>
-            <div class="location_address">
-                456 Beach Road
-                </div>
-            <div class="city">
-                Seaside
-                </div>
-            <div class="country">
-                Beachland
-                </div>
-            <div class="location_description">
-                <p>A luxurious beachfront resort</p>
-            </div>
-        </article>
-    </section>
-</div>
-<footer>
-    <p>Roommate To Survive</p>
-</footer>
+
+<meta charset="utf-8">
+    <title>Roommate</title>
+    <link rel="stylesheet" href="styles/roommate listing.css">
+    
+    <form action="/action_page.php">
+  <fieldset>
+    <legend>Location</legend>
+    <label for="fname">Location ID:</label>
+    <input type="text" id="ID" name="ID"><br><br>
+    <label for="name">Location Name:</label>
+    <input type="name" id="name" name="name"><br><br>
+       <label for="text">Location Address:</label>
+    <input type="radio" id="Ethiopia" name="location" value="Ethiopia">
+    <label for="country">Ethiopia, Addis Ababa</label>
+    <input type="radio" id="Kenya" name="location" value="Kenya">
+    <label for="country">Kenya, Nairobi</label><br><br>
+    <article>Location Describtion</article>
+    <textarea class="form-control" id="review" rows="3"></textarea>
+</select>
+ <br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
 </body>
 </html>
