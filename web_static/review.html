@@ -1,76 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Roommate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/review.css">
-    <link href="../images/icon.png" rel="shortcut icon">
+    <h2>WE APPRECIATE YOUR REVIEW!</h2>
+    <p>Your review will help us to improve our web hosting services.</p>
 </head>
-<form>
-<header>
-    <h2 id="fh2">WE APPRECIATE YOUR REVIEW!</h2>
-<h6 id="fh4">Your review will help us to improve our web hosting services.</h4>
-</header>
-<form id="feedback" action="">
-  <div class="pinfo">Your personal info</div><br>
-  
-<div class="form-group">
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <label for="name">Review ID:</label>
-  <input  name="name" placeholder="name" class="form-control"  type="text">
+<body>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="uname">Review ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="uname" name="username" placeholder="Your user name..">
+      </div>
     </div>
-  </div>
-</div>
-<br>
-<div class="form-group">
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <label for="ID">Room ID:</label>
-    <input name="room_id" type="number" class="form-control" placeholder="room id">
-     </div>
-  </div>
-</div>
-<br>
-<div class="form-group">
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-      <label for="datemin">Review Date:</label>
-  <input type="date" id="datemin" name="datemin"<br><br>
+    <div class="row">
+      <div class="col-25">
+        <label for="date">Review Date</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="date" name="review date" placeholder="mm/dd/yyyy">
+      </div>
     </div>
-  </div>
-</div>
-<br>
- <div class="pinfo">Rate our overall services.</div>
-
-<div class="form-group">
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="fa fa-heart"></i></span>
-   <select class="form-control" id="rate">
+      <div class="row">
+      <div class="col-25">
+        <label for="ID">Room ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="ID" name="room id" placeholder="Your room Id..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="rating">Review Rating</label>
+      </div>
+      <div class="col-75">
+        <select id="rating" name="rating">
       <option value="1star">1</option>
       <option value="2stars">2</option>
       <option value="3stars">3</option>
       <option value="4stars">4</option>
       <option value="5stars">5</option>
-    </select>
+        </select>
+      </div>
     </div>
-  </div>
-</div>
-<br>
- <div class="pinfo">Write your feedback.</div>
-<div class="form-group">
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
- <span class="input-group-addon"><i class="fa fa-heart"></i></span>
-  <textarea class="form-control" id="review" rows="3"></textarea>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Write your feedback</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
     </div>
-  </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
 </div>
 
- <button type="submit" class="btn btn-primary">Submit</button>
-<footer>
-    <p>Roommate To Survive</p>
-</footer>
-</form>
- </html>
+</body>
+</html>
