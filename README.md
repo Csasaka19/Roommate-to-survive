@@ -77,7 +77,7 @@ The website will be maintained by the developers.
 
 ## Bugs
 
-The roommate_listing class is not working as planned at the moment.
+No bugs at the moment.
 
 ## Landing
 
