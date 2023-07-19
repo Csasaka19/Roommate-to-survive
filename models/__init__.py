@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''THis creates a package which enables the import of modules and classes'''
+'''This creates a package which enables the import of modules and classes'''
 
 from models.booking import booking
 from models.database.database_storage import Database_Storage
