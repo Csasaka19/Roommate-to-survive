@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''THis creates a package which enables the import of modules and classes'''
+'''This creates a package which enables the import of modules and classes'''
 
 from models.booking import booking
 from models.database.database_storage import Database_Storage
@@ -11,6 +11,7 @@ from models.roommate_listing import roommate_listing
 from models.user_profile import user_profile
 
 
-# database = Database_Storage()
-# database.reload()
+database = Database_Storage()
+database.reload()
+
 

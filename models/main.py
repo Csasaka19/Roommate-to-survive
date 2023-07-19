@@ -178,9 +178,9 @@ def main():
         roommate_address="Sample Address",
         roommate_status="Available",
         roommate_preference="Female"
-    )
+     )
 
-    # Set the user ID for the roommate listing
+     # Set the user ID for the roommate listing
     listing.set_user_id("445-6789")
 
     # Test the getter methods
@@ -193,7 +193,7 @@ def main():
     roommate_status = listing.get_roommate_status()
     roommate_preference = listing.get_roommate_preference()
 
-    # Print the results
+    # # Print the results
     print("User ID:", user_id)
     print("Roommate ID:", roommate_id)
     print("Roommate Description:", roommate_description)

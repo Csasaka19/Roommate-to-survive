@@ -3,7 +3,7 @@
 from models.user_profile import user_profile as user
 
 
-def roommate_listing(user):
+class roommate_listing(user):
     """This is the roommate listing class"""
 
     def __init__(self,  roommate_id, roommate_description, roommate_price, roommate_availability,
