@@ -10,13 +10,24 @@ from models import location
 from models import dwelling_type
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlaclchemy.ext.declarative import declarative_base
+from os import getenv
+
+Base = declarative_base()
 
 class Database_Storage():
     '''Database storage and class'''
     
     def __init__(self):
         """Initialize the database storage engine"""
-        self.__engine = create_engine('mysql://root:ubuntu@localhost:54.145.241.141/roommate', pool_pre_ping=True)
+        user = getenv("ROOMMATE_MYSQL_USER")
+        passwd = getenv("ROOMMATE_MYSQL_PWD")
+        db = getenv("ROOMMATE_MYSQL_DB")
+        host = getenv("ROOMMATE_MYSQL_HOST")
+        env = getenv("ROOMMATE_ENV")
+        self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'
+                                      .format(user, passwd, host, db),
+                                      pool_pre_ping=True)
         self.__Session = sessionmaker(bind=self.__engine)
         self.__session = self.__Session()
     
@@ -39,7 +50,7 @@ class Database_Storage():
         
     def reload(self):
         """Create all tables in the database and initialize a new session"""
-        self.save()
+        Base.metadata.create_all(self.__engine)
         Session = sessionmaker(bind=self.__engine, expire_on_commit=False)
         self.__session = Session()
     

@@ -14,7 +14,7 @@ We decided to make a website which allows people who have apartments or a spacio
 * [Deployment](#deployment)
 * [Maintenance](#maintenance)
 * [Bugs](#bugs)
-*[Landing](#landing)
+* [Landing](#landing)
 
 ## Environment
 
