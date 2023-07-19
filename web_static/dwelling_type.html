@@ -1,31 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Roommate</title>
-    <link href="styles/common.css" rel="stylesheet" type="text/css">
-    <link href="styles/header.css" rel="stylesheet" type="text/css">
-    <link href="styles/footer.css" rel="stylesheet" type="text/css">
-    <link href="../images/icon.png" rel="shortcut icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles/dwelling_listing.css">
 </head>
 <body>
-<header></header>
 <div class="container">
-    <section class="User ID">
-        <h1>Dwelling type</h1>
-            <div class="dwelling_type_id">
-               Dwelling Type ID: 1
-            </div>
-            <div class="dwelling_type_name">
-                    Dwelling Type Name: House
-              <div class="location">
-                   Location: Subrub
-                </div>
-        </article>
-    </section>
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="dwelling">Dwelling Type</label>
+      </div>
+      <div class="col-75">
+      <select id="dwelling" name="dwelling">
+      <option value="house">House</option>
+      <option value="apartment">Apartment</option>
+      <option value="condo">Condo</option>
+      <option value="room">Room</option>
+        </select>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="location">Location</label>
+      </div>
+      <div class="col-75">
+        <select id="location" name="location">
+          <option value="Ethioia">Addis Ababa,Ethiopia</option>
+          <option value="Kenya">Nairobi,Kenya</option>
+        </select>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="price">Dwelling price</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="dprice" name="dwelling price" placeholder="$">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="date">Availability</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="dprice" name="dwelling availability" placeholder="mm/dd/yyyy">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="text">Description with Amenities </label>
+      </div>
+      <div class="col-75">
+        <textarea id="txt" name="description" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
 </div>
-<footer>
-    <p>Roommate To Survive</p>
-</footer>
+
 </body>
 </html>
