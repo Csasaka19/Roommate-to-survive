@@ -170,38 +170,39 @@ def main():
 
     """Roommate listing class"""
     # Create a roommate listing instance
-    listing = roommate_listing(
-        roommate_id="456",
-        roommate_description="Sample Roommate",
-        roommate_price="500",
-        roommate_availability=True,
-        roommate_address="Sample Address",
-        roommate_status="Available",
-        roommate_preference="Female"
-    )
+    # listing = roommate_listing(
+    #     user="Me",
+    #     roommate_id="456",
+    #     roommate_description="Sample Roommate",
+    #     roommate_price="500",
+    #     roommate_availability=True,
+    #     roommate_address="Sample Address",
+    #     roommate_status="Available",
+    #     roommate_preference="Female"
+    # )
 
     # Set the user ID for the roommate listing
-    listing.set_user_id("445-6789")
+    # listing.set_user_id("445-6789")
 
-    # Test the getter methods
-    user_id = listing.get_user_id()
-    roommate_id = listing.get_roommate_id()
-    roommate_description = listing.get_roommate_description()
-    roommate_price = listing.get_roommate_price()
-    roommate_availability = listing.get_roommate_availability()
-    roommate_address = listing.get_roommate_address()
-    roommate_status = listing.get_roommate_status()
-    roommate_preference = listing.get_roommate_preference()
+    # # Test the getter methods
+    # user_id = listing.get_user_id()
+    # roommate_id = listing.get_roommate_id()
+    # roommate_description = listing.get_roommate_description()
+    # roommate_price = listing.get_roommate_price()
+    # roommate_availability = listing.get_roommate_availability()
+    # roommate_address = listing.get_roommate_address()
+    # roommate_status = listing.get_roommate_status()
+    # roommate_preference = listing.get_roommate_preference()
 
-    # Print the results
-    print("User ID:", user_id)
-    print("Roommate ID:", roommate_id)
-    print("Roommate Description:", roommate_description)
-    print("Roommate Price:", roommate_price)
-    print("Roommate Availability:", roommate_availability)
-    print("Roommate Address:", roommate_address)
-    print("Roommate Status:", roommate_status)
-    print("Roommate Preference:", roommate_preference)
+    # # Print the results
+    # print("User ID:", user_id)
+    # print("Roommate ID:", roommate_id)
+    # print("Roommate Description:", roommate_description)
+    # print("Roommate Price:", roommate_price)
+    # print("Roommate Availability:", roommate_availability)
+    # print("Roommate Address:", roommate_address)
+    # print("Roommate Status:", roommate_status)
+    # print("Roommate Preference:", roommate_preference)
 
     """User profile cass test"""
     profile = user_profile(
