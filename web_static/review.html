@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/review.css">
+    <h2>WE APPRECIATE YOUR REVIEW!</h2>
+    <p>Your review will help us to improve our web hosting services.</p>
+</head>
+<body>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="uname">Review ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="uname" name="username" placeholder="Your user name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="date">Review Date</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="date" name="review date" placeholder="mm/dd/yyyy">
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="ID">Room ID</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="ID" name="room id" placeholder="Your room Id..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="rating">Review Rating</label>
+      </div>
+      <div class="col-75">
+        <select id="rating" name="rating">
+      <option value="1star">1</option>
+      <option value="2stars">2</option>
+      <option value="3stars">3</option>
+      <option value="4stars">4</option>
+      <option value="5stars">5</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Write your feedback</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
