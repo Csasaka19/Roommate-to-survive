@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% if title %}
+        <title>{{ title }} - Roommate</title>
+        {% else %}
+        <title>Roommate To Survive</title>
+        {% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="primary-header container group">
+
+            <h1 class="logo">
+              <a href="index.html">Roommate To Survive</a>
+            </h1>
+      
+            <h3 class="tagline">Ethiopia , Kenya</h3>
+      
+            <nav class="nav primary-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li><!--
+                --><li><a href="index.html">Features</a></li><!--
+                --><li><a href="roommate_listing.html">Filters</a></li><!--
+                  --><li><a href="signin.html">Log in</a></li>
+              </ul>
+            </nav>
+      
+          </header>
+
+          {% block content%} {% endblock %}
+        <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+        <small>&copy; Roommate to Survive</small>
+  
+        <nav class="nav primary-nav">
+          <ul>
+              <li><a href="index.html">Home</a></li><!--
+              --><li><a href="location.html">Location</a></li><!--
+              --><li><a href="filters.html">Filters</a></li><!--
+                --><li><a href="register.html">Log in</a></li>
+          </ul>
+        </nav>
+  
+      </footer>
+    </body>
+</html>
