@@ -18,20 +18,21 @@
               <a href="index.html">Roommate To Survive</a>
             </h1>
       
-            <h3 class="tagline">Ethiopia , Kenya</h3>
+            <h3 class="tagline">Ethiopia(ET) , Kenya(KE)</h3>
       
             <nav class="nav primary-nav">
               <ul>
-                <li><a href="index.html">Home</a></li><!--
-                --><li><a href="index.html">Features</a></li><!--
-                --><li><a href="roommate_listing.html">Filters</a></li><!--
-                  --><li><a href="signin.html">Log in</a></li>
+                <li><a href= "{{ url_for('index') }}">Home</a></li><!--
+                --><li><a href="{{ url_for('login') }}">Log in</a></li><!--
+                --><li><a href="roommate_listing.html">Filters</a></li>
               </ul>
             </nav>
       
           </header>
+          <hr>
 
           {% block content%} {% endblock %}
+          <hr>
         <!-- Footer -->
 
     <footer class="primary-footer container group">
@@ -40,8 +41,8 @@
   
         <nav class="nav primary-nav">
           <ul>
-              <li><a href="index.html">Home</a></li><!--
-              --><li><a href="location.html">Location</a></li><!--
+              <li><a href="{{ url_for('index') }}">Home</a></li><!--
+              --><li><a href="{{ url_for('login') }}">Log in</a></li><!--
               --><li><a href="filters.html">Filters</a></li><!--
                 --><li><a href="register.html">Log in</a></li>
           </ul>
