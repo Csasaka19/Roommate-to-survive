@@ -1,1 +1,1 @@
-FLASK_APP = roommate_app.py
+FLASK_APP=roommate_app.py
