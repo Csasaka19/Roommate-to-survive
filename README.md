@@ -6,22 +6,26 @@ We decided to make a website which allows people who have apartments or a spacio
 ## Table of contents
 
 * [Environment](#environment)
-* [Front-End Development](#front-end)
-* [Back-End Development](#backend)
+* [FrontEnd](#frontend)
+* [BackEnd](#backend)
 * [Database](#database)
 * [Testing](#testing)
 * [Integration](#integration)
 * [Deployment](#deployment)
 * [Maintenance](#maintenance)
+* [Development](#development)
+* [Authors](#authors)
 * [Bugs](#bugs)
 * [Landing](#landing)
 
 ## Environment
 
 This will be built and tested using the following technologies:
-Ubuntu 20.04 LTS
+Ubuntu 20.04 LTS.
+Python3 venv(virtual environment).
+Python console.
 
-## Front-End Development
+## FrontEnd
 
 HTML5: Will be used to create the structure of the website.
 
@@ -29,7 +33,7 @@ CSS3: Will be used to style the website.
 
 Javascript: Will be used to add functionality to the website.
 
-## Back-End Development
+## BackEnd
 
 Python: Will be used to create the back-end of the website on the server side.
 
@@ -37,19 +41,15 @@ Flask: Will be used to create the web application framework.
 
 SQLAlchemy: Will be used to create the database and manage it.
 
-Back-End logic like room listing, user authentication, bookings and any other functionality will be implemented using Python.
-
 The relevant modules are found within the models folder.
 
 ## Database
 
-SQL: Will be used to create the database and manage it.
-
-Schema to store information about the users, rooms, bookings and any other information that will be required and implemented.
+SQLite: Will be used to create the database and manage it in its initial stages.
 
 For connecting the database to the web application, SQLAlchemy will be used.
 
-Database will be found within the models folder.
+Migrations will be done using the Flask-Migrate module to maintain the database in case of any changes to the application.
 
 ## Testing
 
@@ -69,11 +69,30 @@ Third party APIs  like payment processing, map integration, messaging and any ot
 
 ## Deployment
 
-The website will be deployed on Heroku.
+The website will be deployed on Heroku when complete.
 
 ## Maintenance
 
 The website will be maintained by the developers.
+
+## Development
+
+The initial development files were stored within the models folder for class definitions and web_static folder for frontend development.
+
+An example of a tested user class from the roommate_app is shown below:
+
+    ```sasaka-jr@ubuntu:~/Roommate-to-Survive$ python3
+    ```Python 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0] on linux
+    ```Type "help", "copyright", "credits" or "license" for more information.
+    ```>>> from roommate_app.models import User
+    ```>>> u = User(username="Inco", email="inco@gmail.com", age=34, phone="678909345", country="Kenya", gender="F", ```budget=234567)
+    ```>>> u
+    ```<User Inco : Country Kenya>
+    ```>>> print(u.email)
+    ```inco@gmail.com
+    ```>>> print(u.age)
+    ```34
+    ```>>> exit()
 
 ## Bugs
 
@@ -81,10 +100,9 @@ No bugs at the moment.
 
 ## Landing
 
-The landing page link of this project can be found in https://csasaka19.github.io/
+The landing page link of this project can be found in <https://csasaka19.github.io/>
 
-
-Authors:
+## Authors
 
 Clive Sasaka - [Github](https://github.com/Csasaka19) / [Twitter](https://twitter.com/Sasaka_JR)
 
