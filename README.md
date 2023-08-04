@@ -22,7 +22,9 @@ We decided to make a website which allows people who have apartments or a spacio
 
 This will be built and tested using the following technologies:
 Ubuntu 20.04 LTS.
+
 Python3 venv(virtual environment).
+
 Python console.
 
 ## FrontEnd
