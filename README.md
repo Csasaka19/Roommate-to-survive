@@ -81,18 +81,18 @@ The initial development files were stored within the models folder for class def
 
 An example of a tested user class from the roommate_app is shown below:
 
-    ```sasaka-jr@ubuntu:~/Roommate-to-Survive$ python3
-    ```Python 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0] on linux
-    ```Type "help", "copyright", "credits" or "license" for more information.
-    ```>>> from roommate_app.models import User
-    ```>>> u = User(username="Inco", email="inco@gmail.com", age=34, phone="678909345", country="Kenya", gender="F", ```budget=234567)
-    ```>>> u
-    ```<User Inco : Country Kenya>
-    ```>>> print(u.email)
-    ```inco@gmail.com
-    ```>>> print(u.age)
-    ```34
-    ```>>> exit()
+    sasaka-jr@ubuntu:~/Roommate-to-Survive$ python3
+    Python 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> from roommate_app.models import User
+    >>> u = User(username="Inco", email="inco@gmail.com", age=34, phone="678909345", country="Kenya", gender="F", budget=234567)
+    >>> u
+    <User Inco : Country Kenya>
+    >>> print(u.email)
+    inco@gmail.com
+    >>> print(u.age)
+    34
+    >>> exit()
 
 ## Bugs
 
