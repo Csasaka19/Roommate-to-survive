@@ -28,7 +28,7 @@ class Review(roommate_db.Model):
     __tablename__ = 'review'
     id = roommate_db.Column(roommate_db.Integer, primary_key=True, autoincrement=True)
     message = roommate_db.Column(roommate_db.String(140))
-    time_stamp = roommate_db.Column(roommate_db.Datetime, index=True, default=datetime.utcnow)
+    time_stamp = roommate_db.Column(roommate_db.DateTime, index=True, default=datetime.utcnow)
     user_id = roommate_db.Column(roommate_db.Integer, roommate_db.ForeignKey('user.id'))
     
     def __repr__(self):
