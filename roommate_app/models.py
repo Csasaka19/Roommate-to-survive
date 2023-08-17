@@ -16,7 +16,22 @@ class User(roommate_db.Model):
     country = roommate_db.Column(roommate_db.String(20), index=True)
     gender = roommate_db.Column(roommate_db.String(10), index=True)
     budget = roommate_db.Column(roommate_db.Integer, index=True)
+    review = roommate_db.relationship('Review', backref='reviewer', lazy='dynamic')
     
     def __repr__(self):
         '''This method returns a string representation of the user model'''
         return '<User {} : Country {}>'.format(self.username, self.country)
+    
+
+class Review(roommate_db.Model):
+    """This class handles the user reviews about the app"""
+    __tablename__ = 'review'
+    id = roommate_db.Column(roommate_db.Integer, primary_key=True, autoincrement=True)
+    message = roommate_db.Column(roommate_db.String(140))
+    time_stamp = roommate_db.Column(roommate_db.Datetime, index=True, default=datetime.utcnow)
+    user_id = roommate_db.Column(roommate_db.Integer, roommate_db.ForeignKey('user.id'))
+    
+    def __repr__(self):
+        return f'Body: [{self.message}]'
+    
+    
