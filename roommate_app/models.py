@@ -20,7 +20,7 @@ class User(roommate_db.Model):
     
     def __repr__(self):
         '''This method returns a string representation of the user model'''
-        return '<User {} : Country {}>'.format(self.username, self.country)
+        return '<User - {} : Country - {}>'.format(self.username, self.country)
     
 
 class Review(roommate_db.Model):
