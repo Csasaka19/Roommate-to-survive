@@ -2,6 +2,7 @@
 '''This module defines database models for the application'''
 from roommate_app import roommate_db
 from datetime import datetime
+from enum import Enum
 
 
 class User(roommate_db.Model):
@@ -17,6 +18,7 @@ class User(roommate_db.Model):
     gender = roommate_db.Column(roommate_db.String(10), index=True)
     budget = roommate_db.Column(roommate_db.Integer, index=True)
     review = roommate_db.relationship('Review', backref='reviewer', lazy='dynamic')
+    booking = roommate_db.relationship('Booking', uselist=False, back_populates='user')
     
     def __repr__(self):
         '''This method returns a string representation of the user model'''
@@ -33,5 +35,15 @@ class Review(roommate_db.Model):
     
     def __repr__(self):
         return f'Body: [{self.message}]'
-    
-    
+class BookingStatus(Enum):
+    '''Deals the status of reservation for the booking class'''
+    PENDING = 'pending'
+    BOOKED = 'booked'
+
+class Booking(roommate_db.Model):
+    '''This class handles reservations per user'''
+    __tablename__ = 'booking'
+    id = roommate_db.Column(roommate_db.Integer, primary_key=True, autoincrement=True)
+    booking_time = roommate_db.Column(roommate_db.DateTime, index=True, default=datetime.utcnow)
+    status = roommate_db.Column(roommate_db.Enum(BookingStatus), nullable = False, default=BookingStatus.PENDING)
+    user = roommate_db.relationship('User', back_populates='booking')
