@@ -35,6 +35,7 @@ class Review(roommate_db.Model):
     
     def __repr__(self):
         return f'Body: [{self.message}]'
+
 class BookingStatus(Enum):
     '''Deals the status of reservation for the booking class'''
     PENDING = 'pending'
